@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
+
+.container nav .link {
+  appearance: button;
+  background-color: #251d03;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 10px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  /* width: 100%; */
+  margin-bottom: 0px;
+}
+
+.container button:after {
+  background-clip: padding-box;
+  background-color: #198754;
+  border: solid transparent;
+  border-radius: 2rem;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.container button:main,
+.container button:focus {
+  user-select: auto;
+}
+
+.container button:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.container button:disabled {
+  cursor: auto;
+}
+
+
+
+body {
+  /* font-family: 'Roboto', sans-serif; */
+  background-color: rgb(150, 115, 49);
+  color: #0008;
+}
+
+#app {
+  margin: 50px auto;
+  max-width: 550px;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#content {
+  background: #fff6;
+  border-radius: 2rem;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 50px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+nav .link {
+  min-width: 120px;
+  margin: 0 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  #app {
+    position: absolute;
+    margin: auto !important;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
